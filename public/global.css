@@ -1,0 +1,206 @@
+@font-face {
+  font-family: "Bondoni";
+  src: url("/fonts/Bondoni.ttf") format("truetype");
+}
+button,
+a {
+  cursor: pointer;
+}
+body {
+  position: relative;
+  font-family: "Bondoni", serif;
+}
+select {
+  font-family: "Bondoni", serif;
+}
+h1 {
+  position: relative;
+  text-align: center;
+}
+.boxTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* 제목 왼쪽, select 오른쪽 */
+  margin-bottom: 10px;
+}
+
+.boxTitle select {
+  height: 2em;
+  border: 2px solid #f6603b;
+  border-radius: 6px;
+  padding: 0 3px;
+  background: #fff;
+}
+
+.inputForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 50em;
+  padding: 1em;
+}
+.tagForm {
+  width: em;
+  height: 32px;
+  border: 2px solid #f6603b;
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 14px;
+  background-color: #fff;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.inputForm > input {
+  flex: 1;
+  height: 2em;
+  background: #f9f9f9;
+  border: none;
+}
+#title {
+  width: 20em;
+  flex: none;
+}
+.inputForm > button {
+  width: 5em;
+  height: 1.8em;
+  font-family: "Bondoni", serif;
+  font-size: 1rem;
+  background-color: #f6603b;
+  color: #f9f9f9;
+  border: none;
+}
+.board {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.box {
+  flex: 1;
+  background-color: #f6603b;
+  padding: 15px;
+  min-width: 250px;
+  min-height: 500px;
+}
+.inputBox {
+  width: 85%;
+}
+.boxForm {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  background: #f9f9f9;
+  padding: 10px 5px 10px 5px;
+}
+.inputBox > input {
+  flex: 1;
+  display: block;
+  margin-bottom: 5px;
+  border: none;
+  height: 2em;
+  width: 100%;
+}
+.buttonBox {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-top: 2em;
+  gap: 5px;
+}
+.buttonBox > button {
+  font-family: "Bondoni", serif;
+  font-size: 1rem;
+  background-color: #f6603b;
+  color: #f9f9f9;
+  border: none;
+}
+.buttonBox > a {
+  font-family: "Bondoni", serif;
+  font-size: 1.05rem;
+  text-decoration: none;
+  background-color: #f6603b;
+  color: #f9f9f9;
+  text-align: center;
+}
+.done-text {
+  text-decoration: line-through;
+  color: #999;
+}
+.important-title {
+  font-weight: bold;
+  background-color: #fffde7;
+}
+.topRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+.importantBox {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  background: none;
+  cursor: pointer;
+  margin-right: 5px;
+  border: none;
+}
+.tagUpdate {
+  width: 7em;
+  height: 32px;
+  border: none;
+  font-size: 14px;
+  border: 2px solid #f6603b;
+  vertical-align: middle;
+  border-radius: 6px;
+  margin-left: -2%;
+  background-color: #fff;
+}
+.llmBox {
+  margin-top: 30px;
+  padding: 20px;
+  border-top: 2px solid #f6603b;
+}
+.llmForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 1em;
+}
+.llmForm > input {
+  flex: 1;
+  height: 2em;
+  max-width: 30em;
+  padding: 0.5em;
+  border: none;
+  background: #f9f9f9;
+  font-family: "Bondoni", serif;
+}
+
+.llmForm > button {
+  width: 5em;
+  height: 1.8em;
+  font-family: "Bondoni", serif;
+  font-size: 1rem;
+  background-color: #f6603b;
+  color: #f9f9f9;
+  border: none;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .board {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 100%;
+    min-height: 200px;
+  }
+}
